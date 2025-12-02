@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    outline: none;
+    border: none;
+    
+    text-decoration: none;
+    list-style: none;
+
+    position: relative;
+}
+:root{
+    --main:rgb(209, 227, 255);
+    --main-txt:rgb(0, 123, 255);
+    --second:rgb(255, 138, 29);
+}
+body{
+    max-width: 100svw;
+    min-height: 100svh;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+header{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main);
+    color: var(--main-txt);
+}
+header h1{
+    font-size: 24px;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+nav ul li a{
+    color: black;
+}
+.list{
+    display: none;
+    font-size: 24px;
+}
+.a1{
+    color: var(--main-txt);
+}
+nav ul li a:hover{
+    color: var(--main-txt);
+}
+.sec1{
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 2%;
+    flex-wrap: wrap;
+}
+.sec1 img{
+    padding: 10px;
+}
+.sec1div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.sec1div h2{
+    width: 40%;
+    font-size: 33.6px;
+    color: var(--main-txt);
+}
+.sec1div button , .sec3div button{
+    padding: 12px 40px;
+    background-color: var(--second);
+    color: white;
+    border: 1px solid var(--second);
+    font-weight: 700;
+}
+.sec1div button:hover, .sec3div button:hover{
+    background-color: transparent;
+    color: var(--second);
+}
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    top: -149px;
+    padding: 20PX;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.sel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    background-color: white;
+    box-shadow:0 0 10px gray;
+    width: 25%;
+    height: 200px;
+    transition-duration: 0.5s;
+}
+.sel i{
+    font-size: 24px;
+}
+.sel:nth-child(2){
+    background-color: var(--second);
+    color: white;
+}
+.sel:hover , .card:hover{
+    background-color: var(--second);
+    color: white;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    margin: 0 10% ;
+        top: -149px;
+
+}
+.about img{
+    width: 50%;  
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:20px;
+}
+.about h2{
+    font-size: 30.5px;
+}
+.about-content button{
+    padding: 10px 20px;
+    background-color: var(--main-txt);
+    color: white;
+    font-weight: 700;
+}
+.sec3{
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100svh;
+}
+.sec3 img{
+    width: 40%;
+}
+.sec3div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.sec3div h2{
+    color: var(--main-txt);
+    font-size: 32px;
+}
+.sec4{
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 350px;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    transition: 0.5s;
+}
+.card i{
+    font-size: 40px;
+}
+.sec4 button{
+    padding: 12px 40px;
+    background-color: var(--main-txt);
+    border: 1px solid var(--main-txt);
+    color: white;
+    font-weight: 700;
+}
+.sec4 button:hover{
+    background-color: transparent;
+    color: var(--main-txt);
+}
+.sec5{
+    padding: 10px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sec5 h2{
+    padding-left:20px ;
+}
+.sec5div{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+form input{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 1px 1px 10px gray;
+}
+.sec5div iframe{
+    width: 50%;
+}
+.msg{
+    height: 80px;
+}
+form button{
+    padding: 10px 30px;
+    color: white;
+    background-color: var(--main-txt);
+    border: 1px solid var(--main-txt);
+    font-weight: 700;
+}
+form button:hover{
+    background-color: transparent;
+    color: var(--main-txt);
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    font-weight: 400;
+    background-color: rgb(10, 15, 67);
+    color: white;
+}
+@media(max-width:1240px){
+    .select{
+        top: 0;
+    }
+    .about{
+        top: 0;
+    }
+}
+@media(max-width:768px){
+    nav{
+        display: none;
+    }
+    .list{
+        display: block;
+    }
+    .sec1{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sec1div{
+        width: 70%;
+    }
+    .sec1 img{
+        width: 100%;
+    }
+    .select{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 100svh;
+    }
+    .sel{
+        height: 50%;
+        width: 80%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about img{
+        width: 100%;
+    }
+    .sec3{
+        height: 90vh;
+    }
+    .sec3 img{
+        display: none;
+    }
+    .sec3div{
+        width: 70%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .sec5div{
+        flex-direction: column;
+        align-items: center;
+    } 
+    form{
+        width: 90%;
+    }
+    .sec5div iframe{
+        width: 90%;
+    }
+}
